@@ -8,18 +8,24 @@
 </head>
 <body>
     <form id="word">
-        <a href="../en/index.html">(English)</a><br>
-        <h1>Skriv ordet:</h1><br>
-        <input type="text" id="word-input" autocomplete="off">
-        <button type="submit" title="Skicka in">✓</button>
-        <button type="button" id="forgot" title="Glömde">:(</button>
+        <a href="../en/index.html">(English)</a>
+        <h1>Skriv ordet:</h1>
+        <div>
+            <input type="text" id="word-input" autocomplete="off">
+            <button type="submit" title="Skicka in">✓</button>
+        </div>
+        <div>
+            <button type="button" id="forgot" title="Glömde">:(</button>
+            <button type="button" id="link" title="Skapa länk">🔗</button>
+        </div>
     </form>
     <script>
         var strings = {
-            whatword: "Vilket ord? (Regex-mönster)",
-            moretries: "Nu har du försökt minst 3 gånger. Vill du se det rätta ordet?",
-            get wordwas(){ return `Ordet var "${word}"!`},
+            whatWord: "Vilket ord? (Regex-mönster)",
+            moreTries: "Nu har du försökt minst 3 gånger. Vill du se det rätta ordet?",
+            get wordWas(){ return `Ordet var "${word}"!`},
             incorrect: "Fel",
+            linkToWord: "Länk till ord",
         }
     </script>
     <script src="../main.js"></script>

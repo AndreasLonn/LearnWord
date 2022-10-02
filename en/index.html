@@ -3,23 +3,29 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Word learner</title>
+    <title>Learn Word</title>
     <link rel="stylesheet" href="../main.css">
 </head>
 <body>
     <form id="word">
-        <a href="../sv/index.html">(Svenska)</a><br>
-        <h1>Type the word:</h1><br>
-        <input type="text" id="word-input" autocomplete="off">
-        <button type="submit" title="Submit">✓</button>
-        <button type="button" id="forgot" title="Forgot">:(</button>
+        <a href="../sv/index.html">(Svenska)</a>
+        <h1>Type the word:</h1>
+        <div>
+            <input type="text" id="word-input" autocomplete="off">
+            <button type="submit" title="Submit">✓</button>
+        </div>
+        <div>
+            <button type="button" id="forgot" title="Forgot">:(</button>
+            <button type="button" id="link" title="Create link">🔗</button>
+        </div>
     </form>
     <script>
         var strings = {
-            whatword: "What word? (Regex-pattern)",
-            moretries: "You have now tried at least 3 times. Do you want to view the correct word?",
-            get wordwas(){ return `The word was "${word}"!` },
+            whatWord: "What word? (Regex-pattern)",
+            moreTries: "You have now tried at least 3 times. Do you want to view the correct word?",
+            get wordWas(){ return `The word was "${word}"!` },
             incorrect: "Incorrect",
+            linkToWord: "Link to word",
         }
     </script>
     <script src="../main.js"></script>

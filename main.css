@@ -7,6 +7,12 @@ a {
 }
 form {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+form > * {
+    margin: 0;
 }
 form :invalid {
     box-shadow: red 0 0 1em;
