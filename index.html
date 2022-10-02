@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word learner</title>
+</head>
+<body>
+    <script>
+        switch (navigator.language || navigator.userLanguage) {
+            case "sv":
+                window.location.href = "sv/index.html";
+                break;
+            case "en":
+            default:
+                window.location.href = "en/index.html";
+                break;
+        }
+    </script>
+</body>
+</html>

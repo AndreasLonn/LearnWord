@@ -1,0 +1,13 @@
+html {
+    color-scheme: light dark;
+}
+a {
+    font-size: small;
+    color: inherit;
+}
+form {
+    text-align: center;
+}
+form :invalid {
+    box-shadow: red 0 0 1em;
+}

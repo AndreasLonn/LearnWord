@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word learner</title>
+    <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+    <form id="word">
+        <a href="../sv/index.html">(Svenska)</a><br>
+        <h1>Type the word:</h1><br>
+        <input type="text" id="word-input" autocomplete="off">
+        <button type="submit" title="Submit">✓</button>
+        <button type="button" id="forgot" title="Forgot">:(</button>
+    </form>
+    <script>
+        var strings = {
+            whatword: "What word? (Regex-pattern)",
+            moretries: "You have now tried at least 3 times. Do you want to view the correct word?",
+            get wordwas(){ return `The word was "${word}"!` },
+            incorrect: "Incorrect",
+        }
+    </script>
+    <script src="../main.js"></script>
+</body>
+</html>

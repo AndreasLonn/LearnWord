@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordinlärning</title>
+    <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+    <form id="word">
+        <a href="../en/index.html">(English)</a><br>
+        <h1>Skriv ordet:</h1><br>
+        <input type="text" id="word-input" autocomplete="off">
+        <button type="submit" title="Skicka in">✓</button>
+        <button type="button" id="forgot" title="Glömde">:(</button>
+    </form>
+    <script>
+        var strings = {
+            whatword: "Vilket ord? (Regex-mönster)",
+            moretries: "Nu har du försökt minst 3 gånger. Vill du se det rätta ordet?",
+            get wordwas(){ return `Ordet var "${word}"!`},
+            incorrect: "Fel",
+        }
+    </script>
+    <script src="../main.js"></script>
+</body>
+</html>
